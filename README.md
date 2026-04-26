@@ -7,3 +7,7 @@
   - Atividades;
 
 Todos os códigos possuem comentários sobre seu funcionamento e os de Atividades possuem junto com eles as questões para aqueles que quiserem práticar.
+
+# Observações
+⚪ Todas as atividades e anotações das aulas provem dos profressores da UFRN:
+  - Josenalde Oliveira (Algoritmos e Programação) - https://github.com/josenalde
