@@ -1,6 +1,6 @@
 # Email_Creator:
 
-  Crie um código que gere e-mails automáticos no formato:<PrimeiroNome>.<ÚltimoNome>@ufrn.edu.br                                                                                                              
+  Crie um código que gere e-mails automáticos no formato: PrimeiroNome.ÚltimoNome@ufrn.edu.br                                                                                                              
   Exemplo:                                                                                                                                                                                                    
     Entrada: Pedro Alvares Cabral                                                                                                                                                                             
     Saída: pedro.cabral@ufrn.edu.br
