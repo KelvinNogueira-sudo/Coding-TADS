@@ -59,4 +59,7 @@ Saída:
 1
 
 # Sorts_Comparetor:
+> Presente na Lista 3
+
   Escreva um código que ordena um vetor de tamanho N (casos usados: N=10,100,1000,10000,100000,1000000) com N números aleatórios (de 20 a 500) de duas formas, com um código "Insertion Sort" e com a função "sort()" da biblioteca "algorithm", e usando um cronômetro da biblioteca "ctime" compare e anote o tempo de execução de cada um.
+  
