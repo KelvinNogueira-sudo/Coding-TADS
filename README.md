@@ -10,4 +10,4 @@ Todos os códigos possuem comentários sobre seu funcionamento e os de Atividade
 
 # Observações
 ⚪ Todas as atividades e anotações das aulas provem dos profressores da UFRN:
-  - Josenalde Oliveira (Algoritmos e Programação) - https://github.com/josenalde
+  - [josenaldeOliveira](https://github.com/josenalde) (Algoritmos e Programação)
