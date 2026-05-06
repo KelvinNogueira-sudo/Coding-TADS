@@ -1,0 +1,81 @@
+//Eu só usei o switch porque não sabia a sintaxe correta para outras funções em pseudocódigo :P 
+
+--- Pseudocódigo ---
+
+Algoritmo Achar_Vogais
+INICIO
+  VAR
+	  palavra= STRING
+	  soma = 0
+  LEIA(palavra)
+    x <- TAMANHO(palavra)
+	PARA i DE 0 ATÉ x, FAÇA
+		ESCOLHA (palavra[i]) {
+        CASO 'a' OU 'A'
+          soma += 1
+          QUEBRA
+        CASO 'e' OU 'E'
+          soma += 1
+          QUEBRA
+        CASO 'i' OU 'I'
+          soma += 1
+          QUEBRA
+        CASO 'o' OU 'O'
+          soma += 1
+          QUEBRA
+        CASO 'u' OU 'U'
+          soma += 1
+          QUEBRA
+	 FIM_PARA
+  ESCREVA "Vogais: ", soma
+  ESCREVA "Consoantes: ",  x - soma
+FIM
+
+
+--- CÓDIGO EM C++ ---
+
+#include <iostream>
+#include <string>
+
+int main () {
+
+    std::string palavra;
+    int vogal = 0;
+
+    std::cin >> palavra;
+    size_t x = palavra.length();
+        for (int i=0; i < x; i++) {
+            switch (palavra[i]) {
+
+                case 'a':
+                case 'A':
+                    vogal += 1;
+                    break;
+
+                case 'e':
+                case 'E':
+                    vogal += 1;
+                    break;
+
+                case 'i':
+                case 'I':
+                    vogal += 1;
+                    break;
+
+                case 'o':
+                case 'O':
+                    vogal += 1;
+                    break;
+
+                case 'u':
+                case 'U':
+                    vogal += 1;
+                    break;
+
+                default:
+                    break;
+            }
+        }
+    std::cout << "Vogais: " << vogal << std::endl;
+    std::cout << "Consoantes: " << x - vogal << std::endl;
+}
