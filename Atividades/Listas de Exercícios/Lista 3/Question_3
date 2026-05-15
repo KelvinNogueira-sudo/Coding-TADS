@@ -1,0 +1,47 @@
+--- Pseudocódigo ---
+Algoritmo Caca_Ocorrencias
+INICIO
+    VAR
+      s = STRING
+	    p = STRING
+	    apar = 0
+  LEIA(s)
+  LEIA(p)
+  tamS <- TAMANHO(s)
+  tamP <- TAMANHO(p)
+	  PARA i DE 1 ATÉ tanS FAÇA
+		  busca = ACHE p EM s
+		  SE busca != npos
+			  apar += 1
+			  APAGUE DE s (busca ATÉ tanP)
+		  SENÃO
+			  QUEBRA
+	  FIM_PARA
+  ESCREVA p, "aparece: ", apar, "vezes"
+FIM
+
+--- Código em C++ ---
+#include <iostream>
+#include <string>
+
+int main () {
+
+    std::string S;
+    std::string P;
+    int apar =  0; //Número de aparições
+    getline(std::cin, S);
+    getline(std::cin, P);
+    size_t tanS = S.length(); //Tamanho de S
+    size_t tanP = P.length(); //Tamanho de P
+
+        for (int i = 0; i <= tanS; i++) { //De 0 até o Tamanho de S
+            auto busca = S.find(P); //Busca a primeira ocorrêcia de P em S
+            if (busca != std::string::npos) { //Se achar uma ocorrência
+                apar += 1;
+                S.erase(busca, tanP); //Apaga a ocorrência do índice de "busca" até o "tamanhp de P"
+            }
+            else break; //Se não tiver, sai do laço
+        }
+    std::cout << P << " aparece: " << apar << " vezes."<< std::endl;
+    return 0;
+}
