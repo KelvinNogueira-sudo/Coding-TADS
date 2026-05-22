@@ -27,6 +27,6 @@ d)  *(pstr + 2)
 
 e)  py = py – 1; *(px – 1) = ? 
 // py = py – 1 descola novamente 4 bytes na memória, ou seja, py passa a apontar novamente para o endereço 200 - 4 = 196 = y;
-// *(px – 1) = ? desloca 4 bytes na memória do ponteiro px, ou seja, 200 - 4 = 196, então px passa a apontar para y
+// *(px – 1) = ? desloca 4 bytes na memória do ponteiro px, ou seja, 200 - 4 = 196, então px passa a apontar para o endereço de y
 // Logo, *(px – 1) = 10
 
