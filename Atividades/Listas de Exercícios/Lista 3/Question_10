@@ -1,0 +1,32 @@
+10. Seja o trecho de código abaixo. Considere #x = 200 e #y = 196: 
+ 
+int x = 5, int y = 2*x;                      // x = 5 e y = 10
+int *px = &x; int *py;                       // ponteiro que aponta para o endereço de x
+py = &y;                                     // ponteiro que aponta para o endereço de y
+char str[] = “tads ufrn”;                    // string do tipo char “tads ufrn”
+char *pstr = &str[5];                        // ponteiro que aponta para o endereço do índice 5 da string (endereço de "u")
+ 
+Indique a saída para cada um dos comandos abaixo: 
+ 
+a)  *px + *py = ? 
+// 5 + 10 = 15;
+
+b)  py = py + 1; *px + *py + y = ? 
+// py = py + 1 (desloca 4 bytes na memória (int = 4 bytes))
+// py = 196 + 4 = 200 (ponteiro passa a apontar para o valor atribuido á x = 5);
+// *px + *py + y = ? (Substituindo)
+// 5 + 5 + 10 = 20 
+
+c)  *pstr = ? 
+// *pstr é um ponteiro que aponta para o endereço do índice 5 da string (endereço de "u")
+// Logo, *pstr = 'u'
+
+d)  *(pstr + 2) 
+// *(pstr + 2) desloca 2 índices na string a partir de 5, ou seja,
+// *(pstr + 2) = 7 = 'r'
+
+e)  py = py – 1; *(px – 1) = ? 
+// py = py – 1 descola novamente 4 bytes na memória, ou seja, py passa a apontar novamente para o endereço 200 - 4 = 196 = y;
+// *(px – 1) = ? desloca 4 bytes na memória do ponteiro px, ou seja, 200 - 4 = 196, então px passa a apontar para o endereço de y
+// Logo, *(px – 1) = 10
+
