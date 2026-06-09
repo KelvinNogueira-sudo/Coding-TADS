@@ -11,7 +11,7 @@ int main(){
     cin >> N;
     vector<int> vetor = {0}; //Vetor zerado
     vetor.resize(N); //Altara o tamanho pra N
-        for(int i = 0; i <= N-1; i++) { //Laço de adição dos valores no vetor
+        for(int i = 0; i <= N-2; i++) { //Laço de adição dos valores no vetor
         cin >> vetor[i];
         }
     sort(vetor.begin(), vetor.end()); //Orderna o vetor em ordem crescente
@@ -19,7 +19,7 @@ int main(){
     //Laço de Identificação da Peça Faltando e Saída
     for(int j = 1; j <= N; j++) {
         if (j != vetor[j]) {
-            cout << j;
+            cout << j << '\n';
             break;
         }
         else {
