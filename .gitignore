@@ -1,2 +1,20 @@
-*.exe
+# VSCode
 *.vscode/
+
+# Code Runner
+tempcoderunner
+tempCodeRunnerFile.cpp
+
+# Arquivos de pré-compilação
+*.gch
+*.pch
+
+# Execultáveis
+*.exe
+*.out
+*.o
+
+# Arquivos objeto
+*.o
+*.ko
+*.obj
