@@ -5,8 +5,7 @@
 using namespace std;
 
 int main() {
-
-    vector<vector<int>> matriz = makeMatrix(3, 3);
+    vector<vector<int>> matriz = makeMatrix<int>(3, 3);
     int menor = minMatrix(matriz);
     int maior = maxMatrix(matriz);
 

@@ -8,19 +8,25 @@ using namespace std;
 #include <vector>
 #include <string>
 
+#define TEMPLATE template <typename T>
+
 //Funções para Vetores
-void insertVetor(vector<float> v, int t);
-void imprimeVetor(float v[], unsigned short t);
+TEMPLATE void insertVector(vector<T> v, int t);
+TEMPLATE void printVector(T v, unsigned short t);
 
 //Funções para Matrizes
-vector<vector<int>> makeMatrix(int l, int c);
-void printMatrix(vector<vector<int>>& matriz);
-int findLMatrix(vector<vector<int>>& matriz, int x);
-int findCMatrix(vector<vector<int>>& matriz, int x);
-int minMatrix(vector<vector<int>>& matriz);
-int maxMatrix(vector<vector<int>>& matriz);
+TEMPLATE vector<vector<T>> makeMatrix(int l, int c);
+TEMPLATE void printMatrix(vector<vector<T>>& matriz);
+TEMPLATE int findLMatrix(vector<vector<T>>& matriz, T x);
+TEMPLATE int findCMatrix(vector<vector<T>>& matriz, T x);
+TEMPLATE T minMatrix(vector<vector<T>>& matriz);
+TEMPLATE T maxMatrix(vector<vector<T>>& matriz);
+TEMPLATE T somaPri(vector<vector<T>>& matriz);
+TEMPLATE T somaSec(vector<vector<T>>& matriz);
 
 //Funções Diversas
 void split(string a, char b);
+
+#include "utils.tpp"
 
 #endif
