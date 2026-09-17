@@ -1,0 +1,44 @@
+Qual a diferença entre uma classe e um objeto?
+- Usando uma anología, classe é como se fosse uma forma de bolo, um molde padrão que
+pode ser usado para fazer várias coisas, já o objeto é o bolo em si que foi feito a
+partir da forma (classe), os objetos podem se diferenciar de um pra outro mas eles
+são produzidos por uma mesma classe.
+
+Identifique algumas características e comportamentos das classes listadas abaixo. Em
+seguida, desenhe o diagrama de classes de cada uma delas.
+ Professor -> Possui (Nome, Salário, Especialização) e Pode (Passar Atividade, Lançar Notas)
+ Produto   -> Possui (Nome, Valor, Quantidade) e Pode (Ser Vendido, Ser Estocado)
+ Livro     -> Possui (Nome, Autor, Categoria) e Pode (Ser Lido, Ser Guardado)
+ Jogador   -> Possui (Nome, Salário, Time, Função) e Pode (Jogar, Treinar, Mudar de Time)
+ Voo       -> Possui (Avião, Destino, Local de Partida, Horário) e Pode (Decolar, Pousar, Ser Cancelado, Cair)
+ Casa      -> Possui (CEP, Cômodos, Telhado) e Pode (Ter Residentes, Ter Acesso a Água, Ter Acesso a Energia)
+
+
+    Professor       |    Jogador
+- nome              | - nome
+- salario           | - salario
+- especializacao    | - time
+                    | - funcao
++ passarAtividade() |
++ lancarNotas()     | + jogar()
+------------------- | + mudarTime()
+    Produtor        | -------------------
+- nome              |    Voo
+- valor             | - aviao
+- quantidade        | - destino
+                    | - localPartida
++ vender()          | - horario
++ estocar()         |
+------------------- | + decolar()
+    Livro           | + pousar()
+- nome              | + cancelar()
+- autor             | + cair()
+- categoria         | -------------------
+                    |   Casa
++ ler()             | - cep
++ guardar()         | - comodos
+------------------- | - telhado
+
+                      + abrigarPessoas()
+                      + usarAgua()
+                      + usarEnergia

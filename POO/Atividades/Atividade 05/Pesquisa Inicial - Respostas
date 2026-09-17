@@ -1,0 +1,14 @@
+1. O que é uma interface e para que serve?
+Interface é um contrato que define o que uma classe deve fazer, mas não diz como ela deve fazer, servindo para definir uma comportamento
+comum entre classes que não possuem uma relação de parentesco entre si.
+
+2. O que é uma classe abstrata? Qual a diferença entre ela e uma interface?
+Classe abstrata é uma classe que não pode ser instânciada diretamente, ela serve apenas como base para a criação de outras classes.
+A diferença entre uma Classe Abstrata e uma Interface é que, a classe abstrata representa um "é um" com estado e comportamento parcialmente
+compartilhado, já a interface representa um contrato, dizendo a classe o que ela pode fazer, mas não se importando com o que ela é.
+
+3. O que é um enum e qual sua vantagem?
+É um tipo especial que representa um conjunto fixo de valores possíveis. Suas vantagens são: Segurança (impossível atribuir um valor que não existe),
+Legibilidade e Facilita a comparação com switch.
+
+4. O que significa declarar um atributo ou método como static?
