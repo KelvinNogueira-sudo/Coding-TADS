@@ -1,6 +1,9 @@
 # VSCode
 *.vscode/
 
+# IntelliJ
+*.idea
+
 # Code Runner
 tempcoderunner
 tempCodeRunnerFile.cpp
